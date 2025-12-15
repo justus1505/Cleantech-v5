@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Shield, CheckCircle, Bell, AlertTriangle, Phone, Mail, ChevronDown } from 'lucide-react';
-import logo from 'figma:asset/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
-import smokeDetectorImg from 'figma:asset/dca3b4e4f89c65b7b9a6d71e6a2d8b83c5f4e9a2.png';
+import logo from '@/assets/dcb51da292ff54aef6e88b5901410915a0793c7.png';
+import smokeDetectorImg from '@/assets/dd94190b4bdb5216d98939f3b6db7a91474fbe48.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
 import { SEOHead } from '../SEOHead';
