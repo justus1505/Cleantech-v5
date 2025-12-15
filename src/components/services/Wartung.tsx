@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Wrench, Settings, Hammer, Sparkles, Palette, Phone, Mail, ChevronDown } from 'lucide-react';
-import logo from '@/assets/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
-import maintenanceImg from '@/assets/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
+import logo from '@/assets/logo.png';
+import maintenanceImg from '@/assets/service-reinigung.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
 import { SEOHead } from '../SEOHead';
