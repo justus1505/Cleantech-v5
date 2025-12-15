@@ -1,6 +1,6 @@
 import { Sparkles, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import logo from 'figma:asset/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
+import logo from '@assets/logo.png';
 
 interface FooterProps {
   onImpressumClick: () => void;
