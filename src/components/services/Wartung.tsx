@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Wrench, Settings, Hammer, Sparkles, Palette, Phone, Mail, ChevronDown } from 'lucide-react';
-import logo from '@/assets/dcb51da292f54aef6e88b5901410915a0793c7.png';
+import ... from '@assets/dcb51da292ff54aef6e88b5901410915a0793c7.png';
 import maintenanceImg from '@/assets/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
