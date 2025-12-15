@@ -97,10 +97,13 @@ export function Footer({ onCookieSettingsClick }: FooterProps) {
             >
             Datenschutz
             </button>
-            {onCookieSettingsClick && (
-            <button onClick={onCookieSettingsClick} className="hover:text-white transition-colors">
-              Cookie-Einstellungen
-            </button>
+<button
+  onClick={() => alert('Cookie-Einstellungen folgen')}
+  className="hover:text-white transition-colors"
+>
+  Cookie-Einstellungen
+</button>
+
             )}
           </div>
         </div>
