@@ -89,7 +89,7 @@ export function LeadQualificationWizard({ isOpen, onClose, preselectedService }:
 
   if (!isOpen) return null;
 
-  const handleNext = () => {
+ const handleNext = async () => {
     // Validation
     if (currentStep === 1 && !formData.services.length) {
       toast.error('Bitte wählen Sie einen Service aus');
@@ -124,8 +124,9 @@ export function LeadQualificationWizard({ isOpen, onClose, preselectedService }:
         toast.error('Bitte geben Sie eine gültige E-Mail-Adresse ein');
         return;
       }
-      handleSubmit();
-      return;
+await handleSubmit();
+return;
+
     }
 
     setCurrentStep(prev => Math.min(prev + 1, totalSteps));
