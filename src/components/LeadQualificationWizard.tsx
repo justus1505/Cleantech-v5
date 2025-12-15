@@ -27,6 +27,9 @@ export function LeadQualificationWizard({ isOpen, onClose, preselectedService }:
     message: ''
   });
 
+  const FORM_ENDPOINT = 'https://formspree.io/f/xqaropee';
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const totalSteps = 5;
 
   const services = [
@@ -132,18 +135,42 @@ export function LeadQualificationWizard({ isOpen, onClose, preselectedService }:
     setCurrentStep(prev => Math.max(prev - 1, 1));
   };
 
-  const handleSubmit = () => {
-    // Here you would normally send to backend
-    console.log('Form submitted:', formData);
-    
-    toast.success('Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.', {
-      duration: 5000
+  const handleSubmit = async () => {
+  if (isSubmitting) return;
+
+  try {
+    setIsSubmitting(true);
+
+    const payload = {
+      ...formData,
+      submittedAt: new Date().toISOString(),
+      sourceUrl: window.location.href,
+    };
+
+    const res = await fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(payload),
     });
 
-    // Close wizard after short delay
+    const data = await res.json().catch(() => null);
+
+    if (!res.ok) {
+      const msg =
+        data?.errors?.[0]?.message ||
+        'Senden fehlgeschlagen. Bitte versuchen Sie es erneut.';
+      throw new Error(msg);
+    }
+
+    toast.success('Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.', {
+      duration: 5000,
+    });
+
     setTimeout(() => {
       onClose();
-      // Reset form
       setCurrentStep(1);
       setFormData({
         services: [],
@@ -161,8 +188,13 @@ export function LeadQualificationWizard({ isOpen, onClose, preselectedService }:
         postalCode: '',
         message: ''
       });
-    }, 2000);
-  };
+    }, 1200);
+  } catch (e: any) {
+    toast.error(e?.message ?? 'Senden fehlgeschlagen.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   const toggleAdditionalService = (service: string) => {
     setFormData(prev => ({
