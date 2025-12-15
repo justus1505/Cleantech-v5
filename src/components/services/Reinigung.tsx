@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Sparkles, Home, Building2, Phone, Mail, CheckCircle2, ChevronDown } from 'lucide-react';
-import logo from 'figma:asset/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
-import cleaningImg from 'figma:asset/9f68a8e3f5a0da73c1d2e7c3e90e4b9c5f5d9a7e.png';
+import logo from '@/assets/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
+import cleaningImg from '@/assets/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
 import { SEOHead } from '../SEOHead';
