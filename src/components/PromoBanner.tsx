@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Bell, Shield, CheckCircle, ArrowRight, Zap, Target } from 'lucide-react';
-import smokeDetectorImg from 'figma:asset/e5e0e628e8e1eb60e93b4177294950eae4ce25db.png';
+import logo from '@assets/service-rauchmelder.png';
 
 const bannerContent = [
   {
