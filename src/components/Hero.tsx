@@ -1,11 +1,11 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { ArrowRight, Sparkles, Leaf, ShieldCheck, Home, Zap } from 'lucide-react';
 import { AnnouncementBanner } from './AnnouncementBanner';
-import logo from 'figma:asset/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
-import cleaningImg from 'figma:asset/dd94190b4bdb5216d98939f3b6db7a91474fbe48.png';
-import facilityImg from 'figma:asset/59b9b2391260f1cd5b6613f9280a9e16e429125c.png';
-import smokeDetectorImg from 'figma:asset/e5e0e628e8e1eb60e93b4177294950eae4ce25db.png';
-import maintenanceImg from 'figma:asset/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
+import logo from '@assets/logo.png';
+import cleaningImg from '@assets/service-reinigung.png';
+import facilityImg from '@assets/service-anlagenpflege.png';
+import smokeDetectorImg from '@assets/service-rauchmelder.png';
+import maintenanceImg from '@assets/service-wartung.png';
 
 // Lazy load wizard for better performance
 const LeadQualificationWizard = lazy(() => import('./LeadQualificationWizard').then(module => ({ default: module.LeadQualificationWizard })));
