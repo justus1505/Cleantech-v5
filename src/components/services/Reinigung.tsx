@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Sparkles, Home, Building2, Phone, Mail, CheckCircle2, ChevronDown } from 'lucide-react';
-import logo from '@/assets/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
+import logo from '@/assets/dcb51da292f54aef6e88b5901410915a0793c7.png';
 import cleaningImg from '@/assets/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
