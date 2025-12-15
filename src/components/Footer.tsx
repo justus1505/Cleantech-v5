@@ -103,8 +103,6 @@ export function Footer({ onCookieSettingsClick }: FooterProps) {
 >
   Cookie-Einstellungen
 </button>
-
-            )}
           </div>
         </div>
       </div>
