@@ -1,9 +1,9 @@
 import { Sparkles, Leaf, ShieldCheck, Home } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import cleaningImg from 'figma:asset/dd94190b4bdb5216d98939f3b6db7a91474fbe48.png';
-import facilityImg from 'figma:asset/59b9b2391260f1cd5b6613f9280a9e16e429125c.png';
-import smokeDetectorImg from 'figma:asset/e5e0e628e8e1eb60e93b4177294950eae4ce25db.png';
-import maintenanceImg from 'figma:asset/4025f99136ffd5ef97de51d0aa6dd294dfd06af9.png';
+import cleaningImg from '@assets/service-reinigung.png';
+import facilityImg from '@assets/service-anlagenpflege.png';
+import smokeDetectorImg from '@assets/service-rauchmelder.png';
+import maintenanceImg from '@assets/service-wartung.png';
 
 const services = [
   {
