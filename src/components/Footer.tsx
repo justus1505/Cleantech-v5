@@ -75,7 +75,13 @@ export function Footer({ onImpressumClick, onDatenschutzClick, onCookieSettingsC
                 <a href="#" className="hover:text-white transition-colors">Kontakt</a>
               </li>
               <li>
-                <button onClick={onImpressumClick} className="hover:text-white transition-colors text-left">Impressum</button>
+                <button
+                  onClick={() => navigate('/impressum')}
+                  className="hover:text-white transition-colors text-left"
+                >
+                   Impressum
+                  </button>
+
               </li>
             </ul>
           </div>
@@ -86,7 +92,12 @@ export function Footer({ onImpressumClick, onDatenschutzClick, onCookieSettingsC
             © 2025 amplius Cleantech UG (haftungsbeschränkt). Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-6 text-sm">
-            <button onClick={onDatenschutzClick} className="hover:text-white transition-colors">Datenschutz</button>
+            <button
+              onClick={() => navigate('/datenschutz')}
+              className="hover:text-white transition-colors"
+            >
+              Datenschutz
+              </button>
             <button onClick={onCookieSettingsClick} className="hover:text-white transition-colors">Cookie-Einstellungen</button>
           </div>
         </div>
