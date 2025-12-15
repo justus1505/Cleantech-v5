@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Leaf, Trees, Snowflake, Sprout, Trash2, Phone, Mail, ChevronDown } from 'lucide-react';
-import logo from '@/assets/dcb51da292ff54aef6e88b5901410915a0793c7.png';
+import logo from '@assets/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
 import facilityImg from '@/assets/59b9b2391260f1cd5b6613f9280a9e16e429125c.png';
 import { useEffect, useState } from 'react';
 import { Footer } from '../Footer';
