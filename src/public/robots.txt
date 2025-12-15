@@ -1,0 +1,19 @@
+# robots.txt für amplius Cleantech UG
+# https://amplius-cleantech.de
+
+# Alle Crawler erlauben
+User-agent: *
+Allow: /
+
+# Sitemap-Verweis
+Sitemap: https://amplius-cleantech.de/sitemap.xml
+
+# Optional: Spezifische Crawler-Anweisungen
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl-Delay (optional, nur wenn nötig)
+# Crawl-delay: 10
