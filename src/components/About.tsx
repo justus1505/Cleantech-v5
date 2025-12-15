@@ -1,4 +1,4 @@
-import logo from 'figma:asset/dcb51d1a292ff54aef6e88b5901410915a0793c7.png';
+import logo from '@assets/logo.png';
 
 export function About() {
   return (
