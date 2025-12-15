@@ -3,12 +3,11 @@ import { useNavigate } from 'react-router-dom';
 import logo from '@assets/logo.png';
 
 interface FooterProps {
-  onImpressumClick: () => void;
-  onDatenschutzClick: () => void;
   onCookieSettingsClick?: () => void;
 }
 
-export function Footer({ onImpressumClick, onDatenschutzClick, onCookieSettingsClick }: FooterProps) {
+
+export function Footer({ onCookieSettingsClick }: FooterProps) {
   const navigate = useNavigate();
 
   return (
@@ -75,12 +74,12 @@ export function Footer({ onImpressumClick, onDatenschutzClick, onCookieSettingsC
                 <a href="#" className="hover:text-white transition-colors">Kontakt</a>
               </li>
               <li>
-                <button
-                  onClick={() => navigate('/impressum')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                   Impressum
-                  </button>
+             <button
+              onClick={() => navigate('/impressum')}
+              className="hover:text-white transition-colors text-left"
+              >
+              Impressum
+              </button>
 
               </li>
             </ul>
@@ -92,13 +91,17 @@ export function Footer({ onImpressumClick, onDatenschutzClick, onCookieSettingsC
             © 2025 amplius Cleantech UG (haftungsbeschränkt). Alle Rechte vorbehalten.
           </p>
           <div className="flex gap-6 text-sm">
-            <button
-              onClick={() => navigate('/datenschutz')}
-              className="hover:text-white transition-colors"
+          <button
+            onClick={() => navigate('/datenschutz')}
+            className="hover:text-white transition-colors"
             >
-              Datenschutz
-              </button>
-            <button onClick={onCookieSettingsClick} className="hover:text-white transition-colors">Cookie-Einstellungen</button>
+            Datenschutz
+            </button>
+            {onCookieSettingsClick && (
+            <button onClick={onCookieSettingsClick} className="hover:text-white transition-colors">
+              Cookie-Einstellungen
+            </button>
+            )}
           </div>
         </div>
       </div>
