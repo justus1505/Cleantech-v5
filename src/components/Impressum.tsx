@@ -38,7 +38,7 @@ export function Impressum({ onBack }: ImpressumProps) {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">Vertreten durch</h2>
             <p className="text-gray-700 leading-relaxed">
-              Geschäftsführer: Justus Schmid
+              Geschäftsführer: Justus Schmidt
             </p>
           </section>
 
