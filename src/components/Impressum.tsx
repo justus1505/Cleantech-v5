@@ -45,7 +45,7 @@ export function Impressum({ onBack }: ImpressumProps) {
           <section>
             <h2 className="text-2xl text-gray-900 mb-4">Kontakt</h2>
             <p className="text-gray-700 leading-relaxed">
-              Telefon: <a href="tel:+4915233195642" className="text-pink-600 hover:underline">+49 152 33 91 56 42</a><br />
+              Telefon: <a href="tel:+4915233915642" className="text-pink-600 hover:underline">+49 152 33 91 56 42</a><br />
               E-Mail: <a href="mailto:info@cleantech-services.de" className="text-pink-600 hover:underline">info@cleantech-services.de</a>
             </p>
           </section>
