@@ -89,7 +89,7 @@ ${formData.message}
                   </div>
                   <div>
                     <div className="text-sm text-pink-100">Telefon</div>
-                    <a href="tel:+4915233915642" className="text-lg hover:underline">+49 (0) 152 33 915642</a>
+                    <a href="tel:+4943492199997" className="text-lg hover:underline">+49 (0) 4349 21 999 97</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
