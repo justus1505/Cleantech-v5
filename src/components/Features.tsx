@@ -87,7 +87,7 @@ export function Features() {
               <div className="text-pink-100">Aktive Kunden</div>
             </div>
             <div>
-              <div className="text-4xl mb-2">50+</div>
+              <div className="text-4xl mb-2">10+</div>
               <div className="text-pink-100">Mitarbeiter</div>
             </div>
             <div>
